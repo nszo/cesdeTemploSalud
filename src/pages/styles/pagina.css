@@ -1,0 +1,68 @@
+.paginaCard-Cuerpo {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+.paginaCard-SectionCard {
+  padding: 100px;
+}
+.paginaCard-ContentCard {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 0px 20px 0px var(--color-950);
+  background-color: var(--color-50);
+  transition: transform 0.3s ease;
+}
+
+.paginaCard-ContentCard:hover {
+  transform: translateY(-10px);
+}
+
+.paginaCard-Title,
+.paginaCard-Descripcion,
+.paginaCard-totalSuscriptores,
+.paginaCardMensajeSuscriptores {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.paginaCard-Title {
+  color: var(--color-600);
+}
+
+.paginaCard-Descripcion {
+  color: var(--color-500);
+}
+
+.paginaCard-totalSuscriptores {
+  color: var(--color-600);
+}
+
+.paginaCardMensajeSuscriptores {
+  padding: 10px;
+  margin-top: 20px;
+  color: var(--color-950);
+  border-radius: 5px;
+  background-color: var(--color-200);
+  width: 100%;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color-600);
+  color: var(--color-50);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-500);
+}

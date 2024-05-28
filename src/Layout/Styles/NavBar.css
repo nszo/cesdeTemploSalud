@@ -1,3 +1,114 @@
-.Menu {
-  background-color: aqua;
+.navBar-content {
+  display: grid;
+  gap: 10px;
+  padding: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(332px, auto));
+  background-color: var(--color-600);
+  place-items: center;
+}
+
+.navBar-content .navBar-titleLogo {
+  margin-top: 10px;
+}
+
+.navBar-content .navBar-titleTemplo,
+.navBar-content .navBar-titleSalud,
+.navBar-underList .navBar-toLink {
+  font-size: 30px;
+  color: var(--color-50); /* Color del texto actualizado */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.navBar-content .navBar-titleTemplo {
+  color: var(--color-50);
+}
+
+.navBar-content .navBar-titleSalud {
+  color: var(--color-200);
+}
+
+.navBar-underList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-decoration: none;
+  gap: 30px;
+}
+
+.navBar-underList .navBar-toLink {
+  font-size: 1.125rem; /* Tamaño de fuente mantenido */
+  text-decoration: none;
+}
+
+.navBar-underList .navBar-toLink:hover {
+  border-radius: 8%;
+  color: var(--color-50);
+  background-color: var(--color-500);
+  padding: 10px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el botón de menú hamburguesa */
+.navBar-hamburger-menu {
+  display: none;
+}
+
+/* Ajustes para dispositivos con ancho máximo de 414px */
+@media (max-width: 414px) {
+  /* Ahora .navBar-titleLogo se mostrará en dispositivos móviles */
+  .navBar-content .navBar-titleLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navBar-underList {
+    flex-direction: column;
+    position: fixed;
+    background-color: var(
+      --color-50
+    ); /* Fondo blanco para los ítems del menú */
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none; /* Inicialmente oculto */
+    height: 40vh; /* Cubre hasta la mitad de la pantalla */
+    justify-content: bet;
+    padding-top: 60px; /* Espacio para el contenido desde la parte superior */
+    z-index: 20; /* Asegura que el menú desplegable esté por encima de otros contenidos */
+  }
+
+  .navBar-underList.active {
+    display: flex; /* Mostrar cuando el menú hamburguesa esté activo */
+    background-color: var(--color-600);
+  }
+
+  .navBar-underList .navBar-toLink {
+    font-weight: bold;
+    color: var(--color-50); /* Color de texto para los ítems del menú */
+    padding: 40px; /* Espaciado adecuado para cada ítem del menú */
+    text-align: center;
+    width: 100%; /* Los enlaces ocupan el ancho completo */
+  }
+  .navBar-underList .navBar-toLink:hover {
+    color: var(--color-50);
+    background-color: var(--color-500);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .navBar-hamburger-menu.black {
+    color: var(--color-300); /* Color del icono cuando está desplegado */
+  }
+
+  .navBar-hamburger-menu {
+    cursor: pointer;
+    color: var(--color-50); /* Color del icono */
+    font-size: 1.25rem; /* Tamaño del icono */
+    display: block; /* Asegurar que el botón de menú se muestre en dispositivos móviles */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 30; /* Asegurar que el botón esté por encima del menú */
+  }
 }

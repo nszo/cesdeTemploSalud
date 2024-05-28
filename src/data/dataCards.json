@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "titulo": "Tarjeta 1",
+        "descripcion": "Descripción de la tarjeta 1",
+        "suscriptores": 29
+    },
+    {
+        "id": 2,
+        "titulo": "Tarjeta 2",
+        "descripcion": "Descripción de la tarjeta 2",
+        "suscriptores": 31
+    },
+    {
+        "id": 3,
+        "titulo": "Tarjeta 3",
+        "descripcion": "Descripción de la tarjeta 3",
+        "suscriptores": 35
+    },
+    {
+        "id": 4,
+        "titulo": "Tarjeta 4",
+        "descripcion": "Descripción de la tarjeta 4",
+        "suscriptores": 40
+    },
+    {
+        "id": 5,
+        "titulo": "Tarjeta 5",
+        "descripcion": "Descripción de la tarjeta 5",
+        "suscriptores": 38
+    },
+    {
+        "id": 6,
+        "titulo": "Tarjeta 6",
+        "descripcion": "Descripción de la tarjeta 6",
+        "suscriptores": 42
+    },
+    {
+        "id": 7,
+        "titulo": "Tarjeta 7",
+        "descripcion": "Descripción de la tarjeta 7",
+        "suscriptores": 25
+    },
+    {
+        "id": 8,
+        "titulo": "Tarjeta 8",
+        "descripcion": "Descripción de la tarjeta 8",
+        "suscriptores": 30
+    },
+    {
+        "id": 9,
+        "titulo": "Tarjeta 9",
+        "descripcion": "Descripción de la tarjeta 9",
+        "suscriptores": 37
+    },
+    {
+        "id": 10,
+        "titulo": "Tarjeta 10",
+        "descripcion": "Descripción de la tarjeta 10",
+        "suscriptores": 39
+    }
+]
